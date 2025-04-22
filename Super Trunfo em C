@@ -1,19 +1,22 @@
 #include <stdio.h>
 int main(){
-// Variaveis
+
+// Criação de variaveis que serão os dados das cartas
 
 char estado[20], capital[20], código[3], opcao, atributo, atributo2;
 int população, pontos;
 float área;
 long long int PIB;
 
-// Menu
+// Menu interativo para o jogo
 
 printf("Escolha uma opção\n");
 printf("1. Iniciar o jogo\n");
 printf("2. Regras do jogo\n");
 printf("3. Sair do jogo\n");
 scanf("%d", &opcao);
+
+// Seleção do menu
 
 switch (opcao)
 {
@@ -35,7 +38,7 @@ default:
     break;
         }
 
-//Criando a CARTA 1
+//Criando a CARTA 1, os dados serao solicitados e o jogador preenchera cada um
 
 printf ("Digite os dados solicitados a seguir: \n");
     printf ("Estado: \n");
@@ -110,7 +113,7 @@ printf ("Digite os dados solicitados a seguir: \n");
     printf ("PIB per capita: %f \n", PIBpercapita);
     printf ("Super Poder: %d \n", SuperPoder);
 
-    // Dados da carta 1
+    // Dados da carta 2
 
     printf ("Carta 2");
     printf ("Estado: %s \n", estado2);
@@ -136,7 +139,7 @@ printf("6 para PIB PER CAPITA\n");
 printf("7 para SUPER PODER\n");
 scanf("%d", &atributo);
 
-
+// Escolhendo o primeiro atributo a ser comparado
 
 switch (atributo)
 {
@@ -250,6 +253,8 @@ default:{
     
     }    break;
 }
+
+// escolhendo o segundo atributo a ser comparado
 
 printf("Escolha o segundo atributo:\n");
 printf("1 para POPULAÇÃO\n");
